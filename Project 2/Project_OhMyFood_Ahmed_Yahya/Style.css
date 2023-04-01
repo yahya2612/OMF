@@ -12,7 +12,7 @@ h1 {
 .isect1 {
     background-color: #f2f2f2;
     height: 300px;
-    margin-top: -10px;
+    margin-top: -25px;
 }
 .Logo {
    margin-top: 30px;
@@ -320,7 +320,6 @@ h6 i {
     font-weight: 700;
  }
 .isect3 {
-    padding-top: -20px;
     background-color: #f2f2f2;
  }
  .irp4 {
@@ -441,6 +440,7 @@ h6 i {
 .heart-container>* {
     border: black;
 }
+
 @media only screen and (min-width: 768px) {
     h1 {
         background-color: blue;
@@ -522,20 +522,7 @@ transform: translateY(0);
     }
   }
 
-  .spinner {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #9d71d6;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    animation: hide-spin 0.0O1s;
-    animation-fill-mode: forwards;
-    animation-delay: 2s;
-    z-index: 3;
+  
 } 
 @keyframes hide-spin {
     from {
@@ -577,4 +564,76 @@ transform: translateY(0);
     text-overflow: ellipsis;
     max-width: calc(100% - 80px);
     overflow: hidden;
+}
+.isect3 a {
+    text-decoration: none;
+    color: black;
+}
+.spinner {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9d71d6;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    animation: hide-spin 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    z-index: 3;
+}
+
+    
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .spinner {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9d71d6;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    animation: hide-spin 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    z-index: 3;
 }
